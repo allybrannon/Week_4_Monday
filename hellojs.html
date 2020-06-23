@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>practice</title>
+  </head>
+  <body>
+    <script>
+      function nameAge(name, age) {
+        console.log("My name is " + name + "." + "I am " + age + " years old");
+      }
+      nameAge("ally", "38");
+
+      const nameAge2 = function (name, age) {
+        console.log(`My name is ${name}. I am ${age} years old.`);
+      };
+      nameAge2("Ally", 38);
+
+      const nameAge3 = (name, age) => {
+        console.log("My name is ", name, "and I am", age, "years old");
+      };
+      nameAge3("Watson", 9);
+
+      // #2
+      function mainFunction(callback, secondParam) {
+        console.log("Main Function Executing");
+        callback(secondParam);
+      }
+
+      let afunc = function () {
+        console.log("Parent Function Called");
+        return () => console.log("Child Function Called");
+      };
+      afunc();
+
+      let aFuncCalled = afunc();
+      aFuncCalled();
+
+      let name = "Yoda";
+
+      if (name == "Yoda") {
+        console.log("Take him to you I will");
+      }
+      name == "Yoda" ? console.log("A hero.") : console.log("not a hero");
+    </script>
+  </body>
+</html>

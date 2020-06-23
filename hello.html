@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>hello Javascript</title>
+  </head>
+  <body>
+    <script>
+      // Javascript goes here
+      console.log("hello World!");
+      function helloWorld() {
+        console.log("hello Javascript");
+      }
+      helloWorld();
+      function withArg(word) {
+        console.log(word);
+      }
+      withArg("hiya");
+
+      function addNums(num1, num2) {
+        console.log(num1 + num2);
+      }
+      addNums(3, 4);
+
+      function withReturn(number1, number2) {
+        return number1 + number2;
+      }
+      withReturn(2, 3);
+
+      var myName = "Ally";
+
+      var results = withReturn(3, 4);
+
+      let fake = 12;
+
+      function cantRedeclare() {
+        let aVar = "something";
+      }
+
+      let myFunc = function () {
+        console.log("This is crazy");
+      };
+
+      myFunc();
+
+      const myArrowFunction = (param1, param2) => {
+        console.log(param1, param2);
+        return param1 + param2;
+      };
+      myArrowFunction("this", "that");
+
+      //   arrow function
+
+      let myFunc2 = () => {
+        console.log("This is the first part");
+        return () => {
+          console.log("This is another item");
+        };
+      };
+      myFunc2()();
+    </script>
+  </body>
+</html>

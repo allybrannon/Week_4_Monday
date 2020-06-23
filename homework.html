@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const nameList = ["Ally", "Alexis", "Watson"];
+
+      const makeCopies = (myArr) => {
+        let outArray = [];
+        for (let i = 0; i < myArr.length; i++) {
+          outArray[i] = [];
+
+          for (let j = 0; j < 100; j++) {
+            outArray[i].push(myArr[i]);
+          }
+        }
+        return outArray;
+      };
+      console.log(makeCopies(nameList));
+    </script>
+  </body>
+</html>
